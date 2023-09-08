@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+   
+}
+body{
+    background-image: url("https://wallpaperaccess.com/full/3539365.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.calculator_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calculator_title{
+    font-size: 30px;
+    font-family: 'Play','Russo One',sans-serif;
+    color: #000000;
+    letter-spacing: 1px;
+    padding: 0px 1px 20px 1px;
+    margin-bottom: 1%;
+    background-color: #9375ee;
+    text-align:center;
+    font-style:bold;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+form{
+    width: 500px;
+    padding: 30px 15px 15px 15px;
+    box-shadow: 0 2px 5px 2px rgba(0,0,0,0.6);
+    border-radius: 15px;
+    background-color: #9375ee;
+}
+input[type="text"]{
+    font-family: 'Orbitron',sans-serif;
+    width: 100%;
+    font-size: 36px;
+    padding: 5px;
+    height: 70px;
+    background-color: rgb(241,241,241);
+    text-overflow: ellipsis;
+    text-align: right;
+    border-radius: 10px;
+}
+hr{
+    margin:15px 0;
+    background-color: rgb(0, 0, 0);
+}
+form .onOffbtn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+form .onOffbtn input{
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: red;
+    box-shadow: 2px 2px 8px rgb(49, 43, 43),
+                inset -2px -2px 6px black;
+    cursor: pointer;
+    color: #f9f9f9;
+}
+form .onOffbtn .onbtn{
+    background-color: #535cf1;
+}
+form .container .offbtn:active{
+    font-size: 14px;
+}
+.onOffbtn .onbtn:active,
+.onOffbtn .offbtn:active{
+    box-shadow: inset 2px 2px 8px rgb(0,0,0),
+                inset -2px -2px 6px rgb(0,0,0);
+}
+
+form .numOpeBtn{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:5px;
+    border-radius: 15px;
+}
+form .numOpeBtn input{
+    height: 50px;
+    background-color: rgb(0,0,0);
+    color: #fff;
+    font-size: 27px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+form .numOpeBtn input:hover{
+    color: rgb(17, 37, 220);
+}
+
+form .onOffbtn input:hover{
+    color: rgb(14, 14, 14);
+}
+
+form .numOpeBtn .ope{
+    background-color: rgba(13, 71, 28, 0.925);
+}
+
+form .numOpeBtn .clear{
+    background-color: #ee3d0c;
+}
+
+form .numOpeBtn .blueBtn{
+    background-color: #020260;
+}
+#scr{
+    border-radius: 15px;
+}
